@@ -17,6 +17,7 @@ footer_text: >
   b.parentNode.innerHTML = 'Venkata Sai <span class="font-weight-bold">Ram Dasari</span>';
   });
   </script>
+  <style>#back-to-top { z-index: 1040 !important; }</style>
 keywords: Venkata Sai Ram Dasari, uncertainty quantification, clinical LLMs, AI for healthcare, generative adversarial networks, Montclair State University # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
