@@ -17,7 +17,11 @@ footer_text: >
   b.parentNode.innerHTML = 'Venkata Sai <span class="font-weight-bold">Ram Dasari</span>';
   });
   </script>
-  <style>#back-to-top:not(.hidden) { bottom: calc(var(--footer-h, 0px) + 20px); }</style>
+  <style>
+  #back-to-top:not(.hidden) { bottom: calc(var(--footer-h, 0px) + 20px); }
+  #back-to-top { display: flex !important; align-items: center; justify-content: center; }
+  #back-to-top svg { margin: 0 !important; }
+  </style>
   <script>
   (function () {
   function setFooterH() {
