@@ -1,0 +1,149 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> GANterpolate | Venkata Sai Ram Dasari </title> <meta name="author" content="Venkata Sai Ram Dasari"> <meta name="description" content="Generative reconstruction of sparse scientific data"> <meta name="keywords" content="Venkata Sai Ram Dasari, uncertainty quantification, clinical LLMs, AI for healthcare, generative adversarial networks, Montclair State University"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.png?v=ddef841826dc368a2e9e4ae1ae45ec1a"> <link rel="apple-touch-icon" href="/assets/img/favicon.png?v=ddef841826dc368a2e9e4ae1ae45ec1a"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://7gb-ram.github.io/projects/3_ganterpolate/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Venkata</span> Sai Ram Dasari </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/experience/">experience </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">announcements </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">GANterpolate</h1> <p class="post-description">Generative reconstruction of sparse scientific data</p> </header> <article> <p>GANterpolate is a hybrid U-Net GAN and interpolation framework for reconstructing missing values in sparse spatiotemporal data. On ERA5 climate data it reduced temperature RMSE from 6.84 to 5.37. GANterpolate+ generalizes the approach across agriculture, energy, healthcare and finance, outperforming baselines in all five domains.</p> <p>Best Paper Award, IEEE UEMCON 2025. Extended version published at IEEE CCWC 2026.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Venkata Sai Ram Dasari. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. <script> document.querySelectorAll(".post-title .font-weight-bold, .navbar-brand.title .font-weight-bold").forEach(function (b) { b.parentNode.innerHTML = 'Venkata Sai <span class="font-weight-bold">Ram Dasari</span>'; }); </script> Last updated: September 28, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Peer-reviewed publications and preprints in reverse chronological order. See also my Google Scholar profile.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-experience",
+          title: "experience",
+          description: "Research, teaching and industry experience, education and certifications.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/experience/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Selected research and engineering projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-announcements",
+          title: "announcements",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "news-our-paper-extending-ganterpolate-multi-variable-synthetic-data-generation-for-climate-modeling-received-the-best-paper-award-at-ieee-uemcon-2025",
+          title: 'Our paper Extending GANterpolate: Multi-Variable Synthetic Data Generation for Climate Modeling received the...',
+          description: "",
+          section: "News",},{id: "news-presented-two-papers-on-synthetic-data-and-on-cryptocurrency-misuse-mitigation-at-ieee-iemcon-2025-in-berkeley-ca",
+          title: 'Presented two papers, on synthetic data and on cryptocurrency misuse mitigation, at IEEE...',
+          description: "",
+          section: "News",},{id: "news-ganterpolate-a-unified-framework-for-data-reconstruction-in-sparse-and-heterogeneous-domains-was-published-at-ieee-ccwc-2026-in-las-vegas-nv",
+          title: 'GANterpolate+: A Unified Framework for Data Reconstruction in Sparse and Heterogeneous Domains was...',
+          description: "",
+          section: "News",},{id: "news-cognitive-vestigiality-in-ai-assisted-learning-was-published-at-acdsa-2026",
+          title: 'Cognitive Vestigiality in AI-Assisted Learning was published at ACDSA 2026.',
+          description: "",
+          section: "News",},{id: "news-started-as-professional-tutor-and-technical-administration-in-the-school-of-computing-at-montclair-state-university-supporting-courses-in-machine-learning-generative-ai-and-research-methods",
+          title: 'Started as Professional Tutor and Technical Administration in the School of Computing at...',
+          description: "",
+          section: "News",},{id: "projects-mauq-clip",
+          title: 'MAUQ-CLIP',
+          description: "Missingness-aware uncertainty quantification for clinical LLMs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_mauq_clip/";
+            },},{id: "projects-clinical-hallucination-detection",
+          title: 'Clinical Hallucination Detection',
+          description: "Ontology-based detection of hallucinated claims in clinical LLM outputs, with coverage gating",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_clinical_hallucination/";
+            },},{id: "projects-ganterpolate",
+          title: 'GANterpolate',
+          description: "Generative reconstruction of sparse scientific data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_ganterpolate/";
+            },},{id: "projects-buybye",
+          title: 'BuyBye',
+          description: "Team lead (team of 3), MIT DesignX. Peer-to-peer marketplace for campus housing, launched with MIT Housing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_buybye/";
+            },},{id: "projects-cochair",
+          title: 'CoChair',
+          description: "AI assistant for university faculty workflows. Pilot with the Biology Department at Montclair State University.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_cochair/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%64%61%73%61%72%69%76%31@%6D%6F%6E%74%63%6C%61%69%72.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qNi--CgAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/7gb-RAM", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/venkata-sai-ram-dasari", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
