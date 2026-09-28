@@ -39,10 +39,10 @@ Before graduate school, I worked as a software developer at ADP, building intern
 
 Outside of research, I enjoy music and chess.
 
-<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a></h2>
+<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a></h2>
 
 <div class="publications">
-{% bibliography %}
+{% bibliography --query @*[selected=true]* %}
 </div>
 
 <h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a></h2>
