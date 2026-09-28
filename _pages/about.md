@@ -2,33 +2,68 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: M.S. Computer Science, <a href='https://www.montclair.edu/'>Montclair State University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>School of Computing</p>
+    <p>Montclair State University</p>
+    <p><a href="mailto:dasariv1@montclair.edu">dasariv1@montclair.edu</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # the full publication list is rendered in the page body below
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # news is rendered in the page body below (after publications and projects)
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a graduate researcher in Computer Science at Montclair State University, where I held a Graduate Assistantship from 2024 to 2026. My research focuses on making machine learning systems reliable enough for high-stakes settings, particularly clinical decision support. In the Software Systems Lab with Dr. Vaibhav Anu, I designed MAUQ-CLIP, a black-box uncertainty quantification framework for clinical large language models that treats missing evidence as an uncertainty signal. In the Data Science Lab with Dr. Hao Liu, I work on ontology-based clinical hallucination detection: verifying the clinical claims an LLM makes against a clinical ontology, and only trusting that check where the ontology actually covers the claim. My part of this work focuses on rigorous evaluation, including a held-out contamination experiment that separates genuine reasoning gains from retrieval of the answer key. Earlier, I co-developed GANterpolate, a hybrid GAN and interpolation framework for reconstructing sparse scientific data, which received the Best Paper Award at IEEE UEMCON 2025.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before graduate school, I worked as a software developer at ADP, building internal platforms with React, Java, Spring Boot and Kafka. I received my B.Tech. in Electronics and Communication Engineering from Aditya University, India.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+#### Research Interests
+
+- Uncertainty quantification
+- AI for healthcare
+- Generative adversarial networks
+- Graph neural networks
+- Split learning
+
+Outside of research, I enjoy music and chess.
+
+<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a></h2>
+
+<div class="publications">
+{% bibliography %}
+</div>
+
+<h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a></h2>
+
+{% assign featured_projects = site.projects | where: "featured", true | sort: "importance" %}
+
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-2">
+    {% for project in featured_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>
+
+<h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">announcements</a></h2>
+
+{% include news.liquid limit=true %}
+
+<!-- Hide Altmetric badges that have no recorded attention (score 0) -->
+<style>
+  .altmetric-embed:has(a[style*="/0.png"]) {
+    display: none !important;
+  }
+</style>
