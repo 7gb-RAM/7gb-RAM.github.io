@@ -1,6 +1,6 @@
 # Venkata Sai Ram Dasari
 
-Source for my academic website: **https://7gb-ram.github.io**
+Source for my academic website: **https://ramdasari.com**
 
 Graduate researcher in Computer Science at Montclair State University, working on uncertainty quantification and AI for healthcare.
 
